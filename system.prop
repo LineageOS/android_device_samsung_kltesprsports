@@ -1,3 +1,1 @@
-# Radio
-rild.libpath=/system/lib/libsec-ril.so
 ro.updater.next_device=kltedv
