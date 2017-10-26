@@ -5,4 +5,4 @@ vendor/firmware/bcm2079xB5_firmware.ncd
 vendor/firmware/bcm2079xB5_pre_firmware.ncd
 
 # Radio - pinned to G900PVPU3BOK4_G900PSPT3BOK4_SPR
-lib/libsec-ril.so|408510e5d9d1935522aba554da81347f29932902
+lib/libsec-ril.so:vendor/lib/libsec-ril.so|408510e5d9d1935522aba554da81347f29932902
