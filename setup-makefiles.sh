@@ -17,8 +17,9 @@
 
 set -e
 
-export DEVICE=kltespr
+export DEVICE=kltesprsports
 export DEVICE_COMMON=klte-common
+export VARIANT_COPYRIGHT_YEAR=2017
 export VENDOR=samsung
 
 ./../$DEVICE_COMMON/setup-makefiles.sh $@

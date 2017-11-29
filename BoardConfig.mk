@@ -16,14 +16,14 @@
 # inherit from common klte
 -include device/samsung/klte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := kltespr,klte
+TARGET_OTA_ASSERT_DEVICE := kltesprsports,klte
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage_klte_bcm2079x_defconfig
+TARGET_KERNEL_CONFIG := lineage_kltesprsports_defconfig
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8974
-TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/kltespr/init/init_klte.cpp
+TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/kltesprsports/init/init_klte.cpp
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
@@ -33,4 +33,4 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2831155200
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12187581440
 
 # inherit from the proprietary version
--include vendor/samsung/kltespr/BoardConfigVendor.mk
+-include vendor/samsung/kltesprsports/BoardConfigVendor.mk

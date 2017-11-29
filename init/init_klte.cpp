@@ -60,12 +60,12 @@ void init_target_properties()
 
     std::string bootloader = property_get("ro.bootloader");
 
-    if (bootloader.find("G900P") == 0) {
-        /* kltespr */
-        property_override("ro.build.fingerprint", "samsung/kltespr/kltespr:6.0.1/MMB29M/G900PVPS3CQD1:user/release-keys");
-        property_override("ro.build.description", "kltespr-user 6.0.1 MMB29M G900PVPS3CQD1 release-keys");
-        property_override("ro.product.model", "SM-G900P");
-        property_override("ro.product.device", "kltespr");
+    if (bootloader.find("G860P") == 0) {
+        /* kltesprsports */
+        property_override("ro.build.fingerprint", "samsung/kltesprsports/kltesprsports:6.0.1/MMB29M/G860PVPU2CQB2:user/release-keys");
+        property_override("ro.build.description", "kltesprsports-user 6.0.1 MMB29M G860PVPU2CQB2 release-keys");
+        property_override("ro.product.model", "SM-G860P");
+        property_override("ro.product.device", "kltesprsports");
         property_set("telephony.sms.pseudo_multipart", "1");
         cdma_properties("Sprint", "310120", "8");
     }
