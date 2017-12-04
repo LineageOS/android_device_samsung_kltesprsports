@@ -1,8 +1,7 @@
 # NFC
-vendor/firmware/bcm2079xB4_firmware.ncd
-vendor/firmware/bcm2079xB4_pre_firmware.ncd
-vendor/firmware/bcm2079xB5_firmware.ncd
-vendor/firmware/bcm2079xB5_pre_firmware.ncd
+etc/sec_s3fwrn5_rfreg.bin
+lib/hw/nfc_nci.MSM8974.so
+vendor/firmware/sec_s3fwrn5_firmware.bin
 
 # Radio - pinned to G860PVPU2BOK1_G860PSPT2BOK1_SPR
 lib/libsec-ril.so:vendor/lib/libsec-ril.so|b62731e396e531deed0c9c36287f52fff8e79536
