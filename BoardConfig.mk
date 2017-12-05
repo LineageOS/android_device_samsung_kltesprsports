@@ -32,5 +32,10 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 15728640
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2831155200
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12187581440
 
+# TWRP Support - Optional
+ifeq ($(WITH_TWRP),true)
+-include device/samsung/kltesprsports/twrp.mk
+endif
+
 # inherit from the proprietary version
 -include vendor/samsung/kltesprsports/BoardConfigVendor.mk
