@@ -23,6 +23,12 @@ $(call inherit-product-if-exists, vendor/samsung/kltesprsports/kltesprsports-ven
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# FM radio
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
+
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-sec.conf:system/etc/libnfc-brcm.conf \
