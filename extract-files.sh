@@ -24,5 +24,10 @@ export VENDOR=samsung
 
 ./../$DEVICE_COMMON/extract-files.sh $@
 
+MY_DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+
+CM_ROOT="$MY_DIR"/../../../
+
 NFC_HAL="$CM_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/hw/nfc_nci.MSM8974.so
 sed -i 's|/etc/libnfc-sec-hal.conf|/vendor/etc/sec-nfc.conf|g' $NFC_HAL
