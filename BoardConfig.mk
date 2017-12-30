@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from common klte
--include device/samsung/klte-common/BoardConfigCommon.mk
+include device/samsung/klte-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := kltesprsports,klte
 
@@ -29,6 +29,9 @@ TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/kltesprsports/init/init_kl
 ifeq ($(WITH_TWRP),true)
 -include device/samsung/kltesprsports/twrp.mk
 endif
+
+# Radio/RIL
+include $(COMMON_PATH)/radio/single/board.mk
 
 # inherit from the proprietary version
 -include vendor/samsung/kltesprsports/BoardConfigVendor.mk
