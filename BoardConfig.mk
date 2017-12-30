@@ -30,5 +30,8 @@ ifeq ($(WITH_TWRP),true)
 -include device/samsung/kltesprsports/twrp.mk
 endif
 
+# Radio/RIL
+include $(COMMON_PATH)/radio/single/board.mk
+
 # inherit from the proprietary version
 -include vendor/samsung/kltesprsports/BoardConfigVendor.mk
