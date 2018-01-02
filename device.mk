@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2014 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,10 +24,7 @@ $(call inherit-product-if-exists, vendor/samsung/kltesprsports/kltesprsports-ven
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # NFC
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/libnfc-sec.conf:system/vendor/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/configs/libnfc-sec-hal.conf:system/vendor/etc/sec-nfc.conf \
-    $(LOCAL_PATH)/configs/nfcee_access.xml:system/vendor/etc/nfcee_access.xml
+$(call inherit-product, device/samsung/klte-common/nfc/s3fwrn5/product.mk)
 
 # common klte
 $(call inherit-product, device/samsung/klte-common/klte.mk)
